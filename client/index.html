@@ -7,48 +7,14 @@
   <h1>Fortune Teller</h1>
   <button id="getComplimentBtn">Get Compliment</button>
   <button id="getFortuneBtn">Get Fortune</button>
+  <button id="getRichBtn">Get Rich</button>
+  <button id="getMotivationBtn">Get Motivation</button>
+  <button id="getSacksBtn">Get Sacks</button>
 
-  <div>
-    <label for="nameInput">Enter Your Name:</label>
-    <input type="text" id="nameInput">
-    <button id="affirmationButton">Get Daily Affirmation</button>
-    <p id="affirmationResult"></p>
-  </div>
+  
+  
 
-  <div>
-    <label for="imageUpload">Upload an image:</label>
-    <input type="file" id="imageUpload">
-    <label for="imageDescription">Enter image description:</label>
-    <input type="text" id="imageDescription">
-    <button id="addToVisionBoardButton">Add to Vision Board</button>
-    <div id="visionBoard"></div>
-     </div>
-
-  <script>
-    const getComplimentBtn = document.getElementById('getComplimentBtn');
-    const getFortuneBtn = document.getElementById('getFortuneBtn');
-
-    const getCompliment = () => {
-      // Code for getting a compliment...
-      alert('You are amazing!');
-    };
-
-    const getFortune = async () => {
-      const fortunes = [
-        "You will find success in unexpected places.",
-        "A thrilling adventure awaits you in the near future.",
-        "Good fortune will smile upon you today.",
-        "Your hard work will pay off and lead to great achievements.",
-        "Love and happiness will surround you in the coming days."
-      ];
-
-      const randomIndex = Math.floor(Math.random() * fortunes.length);
-      const fortune = fortunes[randomIndex];
-      alert(fortune);
-    };
-
-    getComplimentBtn.addEventListener('click', getCompliment);
-    getFortuneBtn.addEventListener('click', getFortune);
-  </script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
